@@ -10,7 +10,8 @@ window.addEventListener("scroll", ()=>{
 })
 
 //theme color
-const alternateStyles=document.querySelectorAll(".alternative-style");
+
+const alternateStyles = document.querySelectorAll(".alternative-style");
 function setActivesStyle(color){
     alternateStyles.forEach((style)=>{
         if(color === style.getAttribute("title")){
@@ -20,6 +21,11 @@ function setActivesStyle(color){
         }
     })
 }
+///function changeColor(){
+///    alternateStyles.forEach((style)=>{
+///        if(localStorage.getItem("color")=== style.getAttribute(""))
+///    })
+///}
 ///////////////////////////
 const dayNight =document.querySelector(".day-night");
 dayNight.addEventListener("click",()=>{
